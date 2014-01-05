@@ -1,6 +1,4 @@
 <?php
-namespace Orpheus\ScalarTypes;
-
 class HashMap {
 	protected $values = array();
 
