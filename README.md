@@ -1,0 +1,4 @@
+ScalarPHP
+=========
+
+Just an experiment.
