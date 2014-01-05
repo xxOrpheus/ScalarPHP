@@ -36,8 +36,6 @@ class MyClass {
 ## vs
 
 ```php
-require 'String.php';
-
 class MyClass {
   public function doSomething($string) {
       if(is_string($string)) {
