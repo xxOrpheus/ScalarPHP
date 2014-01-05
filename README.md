@@ -19,3 +19,30 @@ echo $s->charCodeAt(4) . '<br />'; // something
 echo $s->toUppercase()->startsWith('HELL'); // 1, toUppercase returns new instance of String
 ?>
 ```
+
+### The advantage of something like this is that you can type-hint, unlike primitive types.
+
+```php
+<?php
+require 'String.php';
+
+class MyClass {
+  public function doSomething(String $string) {
+      echo $string;
+  }
+}
+````
+
+## vs
+
+```php
+require 'String.php';
+
+class MyClass {
+  public function doSomething($string) {
+      if(is_string($string)) {
+        echo $string;
+      }
+  }
+}
+```
