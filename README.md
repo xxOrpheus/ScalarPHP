@@ -20,7 +20,7 @@ echo $s->toUppercase()->startsWith('HELL'); // 1, toUppercase returns new instan
 ?>
 ```
 
-### The advantage of something like this is that you can type-hint, unlike primitive types.
+### The advantage of something like this is that you can type-hint, unlike with primitive types.
 
 ```php
 <?php
