@@ -1,6 +1,4 @@
 <?php
-namespace Orpheus\ScalarTypes;
-
 class String {
 	public function __construct($str) {
 		if(is_string($str)) {
