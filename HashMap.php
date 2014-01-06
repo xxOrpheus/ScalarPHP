@@ -13,6 +13,14 @@ class HashMap {
 		return count($this->values);
 	}
 
+	public function set($key, $data) {
+		if(isset($this->values[$key])) {
+			$this->values[$key] = $data;
+			return true;
+		}
+		return false;
+	}
+
 	public function get($key) {
 		return isset($this->values[$key]) ? $this->values[$key] : null;
 	}
